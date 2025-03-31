@@ -1,0 +1,39 @@
+/* Custom styles for Shopee clone */
+.cart-count {
+  font-size: 0.6rem;
+  min-width: 1.25rem;
+  height: 1.25rem;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .thumbnail-container {
+    flex-direction: row;
+    order: 2;
+    margin-top: 1rem;
+  }
+  
+  .header-search {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Animation for add to cart feedback */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.added-feedback {
+  animation: fadeIn 0.3s ease;
+}
